@@ -1,6 +1,6 @@
 class Account < ApplicationRecord
 	belongs_to :user
-
+	has_many :transactions
 
 	validates_uniqueness_of :user_id
 

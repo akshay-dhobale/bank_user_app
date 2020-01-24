@@ -7,7 +7,6 @@ class AccountsController < ApplicationController
 		if account.save
 			render json: {status: "success"} and return
 		else
-			binding.pry
 			render json: {errors: {error: 'invalid_params', error_description: account.errors.full_messages}}, status: :unprocessable_entity and return
 		end
 	end

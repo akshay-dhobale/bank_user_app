@@ -7,4 +7,7 @@ Rails.application.routes.draw do
 
   post "/create-account", to: 'accounts#create'
   get '/get-details', to: 'accounts#get_details'
+
+  post '/transaction/:txn_type', to: 'transactions#create'#, constraints: lambda { |request| }
+  # post '/withdraw-money', to: 'transactions#create'
 end
