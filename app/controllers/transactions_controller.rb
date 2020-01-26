@@ -23,7 +23,7 @@ class TransactionsController < ApplicationController
 				render json: {status: "failed", transaction_id: @transaction.transaction_id} and return
 			end
 		else
-			render json: {error: "create account"} and return
+			render json: {error: "wrong action"} and return
 		end
 	end
 
