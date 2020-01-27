@@ -1,24 +1,13 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 Things you may want to cover:
 
-* Ruby version
+* Ruby version = 2.6.0
 
-* System dependencies
+rails version = 5.2.0
 
-* Configuration
+database = postgres
 
-* Database creation
 
-* Database initialization
+This is bank user app service.
+all request to this service come from user_app service after validation.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+it contain user, acoount, transaction model in it.
